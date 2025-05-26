@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/menuLay"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/back"
+                android:layout_marginEnd="90dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="About US"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/logo"
+                android:layout_marginStart="70dp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/wtd"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="52dp"
+            android:layout_marginEnd="52dp"
+            android:src="@drawable/wed"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/menuLay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <LinearLayout
+            android:id="@+id/wtdtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintTop_toBottomOf="@id/wtd">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What we do"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="At Plantez, we empower users to identify medicinal plants easily using image recognition technology. We provide comprehensive information on plant names, descriptions, medicinal uses, geographic adaptability, and seasonal details. Additionally, our platform serves as a knowledge hub where users can search and learn about various medicinal plants, explore detailed cultivation guides, and read insightful articles about medicinal flora in India."
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/mission"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="52dp"
+            android:layout_marginEnd="52dp"
+            android:src="@drawable/mission"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/wtdtxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <LinearLayout
+            android:id="@+id/mtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintTop_toBottomOf="@id/mission">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Mission"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our mission is to make the identification and understanding of medicinal plants accessible to everyone through advanced technology and reliable information. We aim to educate and inspire individuals to utilize India's rich botanical heritage for health and wellness, while promoting sustainable cultivation practices."
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/vission"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="52dp"
+            android:layout_marginEnd="52dp"
+            android:src="@drawable/v"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/mtxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <LinearLayout
+            android:id="@+id/vtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintTop_toBottomOf="@id/vission">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Vision"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" To be the leading digital resource for medicinal plant identification and education in India, fostering a community that values and leverages nature's healing potential for better health and sustainable living."
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

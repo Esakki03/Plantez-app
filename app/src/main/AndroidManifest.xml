@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Plantz"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="30">
+
+        <activity
+            android:name=".ContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IdentifyProcessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IdentifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IdentifyResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArticleAboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArticleItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArticleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpeciesAboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpeciesItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpeciesGrowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlantDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlantsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetStartedActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
